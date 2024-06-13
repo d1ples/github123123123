@@ -1,18 +1,18 @@
 # Вопрос 1
 
-[код](/tasks/10/src/first.cpp)
+[код](/10/src/first.cpp)
 
 # Вопрос 2
 
-[код](/tasks/10/src/second.cpp)
+[код](/10/src/second.cpp)
 
 # Вопрос 3
 
-[код](/tasks/10/src/third.cpp)
+[код](/10/src/third.cpp)
 
 # Вопрос 4
 
-[код](/tasks/10/src/fourh.cpp)
+[код](/10/src/fourh.cpp)
 
 # Вопрос 5
 
@@ -28,4 +28,4 @@ e) Указатель на неправильный тип данных.
 
 # Вопрос 6 и 7
 
-[код](/tasks/10/src/blackjack.cpp)
+[код](/10/src/blackjack.cpp)
