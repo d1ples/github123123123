@@ -1,12 +1,22 @@
 #include <iostream>
+ 
+void printCString(const char* str)
+{
+  // Пока мы не встретили нулевой терминатор
+  while (*str != '\0')
+  {
 
-int main() {
-    const char* str = "Hello, world!";
-
-    do {
-        std::cout << *str << "\n";
-        ++str;
-    } while (*str != '\0');
-
-    return 0;
+    std::cout << *str;
+ 
+    ++str;
+  }
+}
+ 
+int main()
+{
+  printCString("Hello world!");
+ 
+  std::cout << '\n';
+ 
+  return 0;
 }
