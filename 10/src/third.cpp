@@ -1,31 +1,28 @@
 #include <iostream>
-#include <string>
-
-template<typename T>
-void swap(T& a, T& b) {
-    T c = a;
-
-    a = b;
-    b = c;
+ 
+// str будет указывать на первую букву строки в стиле C.
+// Обратите внимание, что str указывает на const char,
+// поэтому мы не можем изменить значения, на которые он указывает.
+// Однако мы можем заставить str указывать на что-нибудь еще.
+// Это не меняет значения аргумента.
+void printCString(const char* str)
+{
+  // Пока мы не встретили нулевой терминатор
+  while (*str != '\0')
+  {
+    // выводим текущий символ
+    std::cout << *str;
+ 
+    // и переводим str на следующий символ
+    ++str;
+  }
 }
-
-int main() {
-    int a = 10;
-    int b = 20;
-  
-    std::cout << a << "\n" << b << "\n";
-
-    swap(a, b);
-    
-    std::cout << a << "\n" << b << "\n";
-
-    std::string c = "One";
-    std::string d = "Two";
-    
-    
-    std::cout << c << "\n" << d << "\n";
-
-    swap(c, d);
-    
-    std::cout << c << "\n" << d << "\n";
+ 
+int main()
+{
+  printCString("Hello world!");
+ 
+  std::cout << '\n';
+ 
+  return 0;
 }
